@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css" >-->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>.modal {
+   width: 500px;
+   height: 500px;
+   position: absolute;
+   left: 50%;
+   top: 50%; 
+   margin-left: -250px;
+   margin-top: -250px;
+}</style>
+	
+	<title>Home Page</title>
+</head>
+<body>
+
+<div class="container-fluid" style="margin-bottom:70px">
+<div class="row">
+<a class="navbar-brand" href=""><img alt="img" src="siesgst.png"></img></a>
+<!--<div><h1 align="center">GST LIBRARY</h1></div>-->
+</div>
+</div>
+<nav class=" navbar navbar-inverse">
+	<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dd">
+					
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="dd">
+				<ul class="nav navbar-nav" style="margin-left:70px">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Branch<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">CE</a></li>
+							<li><a href="#">IT</a></li>
+							<li><a href="#">EXTC</a></li>
+							<li><a href="#">MECH</a></li>
+							<li><a href="#">PPT</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">Login<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" data-target="#s1" data-toggle="modal">Student</a></li>
+							<li><a href="#" data-target="#f1" data-toggle="modal">Faculty</a></li>
+							<li><a href="#" data-target="#a1" data-toggle="modal">Admin</a></li>
+						</ul>
+					</li>
+					<li><a href="">Membership</a></li>
+					<li><a href="">F.A.Q</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+</nav>
+
+<div class="container">
+<div class="row">
+		<!-- Gallery -->
+		<section>
+			<div class="page-header" id="section-gallery">
+				<h2 align="center">LIBRARY
+				<small>SIES GST</small></h2>
+			</div>
+
+			<div class="carousel slide" id="gallery-carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#gallery-carousel" data-slide-to="1"></li>
+					<li data-target="#gallery-carousel" data-slide-to="2"></li>
+				</ol>
+				
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="lib1.jpg" alt="slider image" style="width:100%; height:500px">
+						<div class="carousel-caption">This is a caption.</div>
+					</div>
+					<div class="item">
+						<img src="lib2.jpg" alt="slider image" style="width:100%; height:500px">
+						<div class="carousel-caption">This is a caption.</div>
+					</div>
+					<div class="item">
+						<img src="lib3.jpg" alt="slider image" style="width:100%; height:500px">
+						<div class="carousel-caption">This is a caption.</div>
+					</div>
+				</div> <!-- End carousel-inner -->
+					<!-- image slider control -->
+				<a href="#gallery-carousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a href="#gallery-carousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+			</div> <!-- End carousel -->
+		</section>
+		</div>
+<div class="container">
+<h3>LIBRARY</h3></div>
+<div class="jumbotron">
+<p>The GST library aims to create and preserve an incessant source of knowledge for the students. It is a gateway to latest information and trends in the world and an information hub for the academic community. Spacious and comfortable, the library offers a congenial and dynamic environment for conducting academic work, study and research. It offers a fine collection of books, reference books and technical journals and magazines, all of which are arranged in a neat and organized, subject-wise manner for easy access and quick retrieval.</p>	
+</div>
+<div class="container" style="float:left"></div>
+<div class="modal fade" id="s1">
+	<div class="modal-content">
+		<!--<div class="modal-header" >Modal heading</div>-->
+		<div class="modal-body" >
+		<div class="register-box">
+        <div class="register-logo">
+        <a href="#"><b>SIESGST LIBRARY</a></div>
+        <div class="register-box-body">
+           <p class="login-box-msg">Student Login</p>
+           <form action="studentlogin.php" method="post">
+           <div class="form-group">
+              <input type="text" class="form-control" placeholder="Login Id" name="loginid" id="loginid"></div>
+           <div class="form-group">	
+	          <input type="password" class="form-control" placeholder="password" name="password" id="password"></div>
+           <div class="form-group">
+	          <input type="submit" value="Login"></div>
+           </form>
+
+        </div>
+    </div>
+		</div>
+		<!--<div class="modal-footer">Modal footer</div>-->
+	</div>
+</div>
+<div class="modal fade" id="f1">
+	<div class="modal-content">
+		<!--<div class="modal-header" >Modal heading</div>-->
+		<div class="modal-body" >
+		<div class="register-box">
+        <div class="register-logo">
+        <a href="#"><b>SIESGST LIBRARY</a></div>
+        <div class="register-box-body">
+           <p class="login-box-msg">Faculty Login</p>
+           <form action="facultylogin.php" method="post">
+           <div class="form-group">
+              <input type="text" class="form-control" placeholder="Login Id" name="" id=""></div>
+           <div class="form-group">	
+	          <input type="password" class="form-control" placeholder="password" name="" id=""></div>
+           <div class="form-group">
+	          <input type="submit" value="Login"></div>
+           </form>
+
+        </div>
+    </div>
+		</div>
+		<!--<div class="modal-footer">Modal footer</div>-->
+	</div>
+</div>
+<div class="modal fade" id="a1">
+	<div class="modal-content">
+		<!--<div class="modal-header" >Modal heading</div>-->
+		<div class="modal-body" >
+		<div class="register-box">
+        <div class="register-logo">
+        <a href="#"><b>SIESGST LIBRARY</a></div>
+        <div class="register-box-body">
+           <p class="login-box-msg">Admin Login</p>
+           <form action="admin.php" method="post">
+           <div class="form-group">
+              <input type="text" class="form-control" placeholder="Login Id" name="admin" id="admin"></div>
+           <div class="form-group">	
+	          <input type="password" class="form-control" placeholder="password" name="pwd" id="pwd"></div>
+           <div class="form-group">
+	          <input type="submit" value="Login"></div>
+           </form>
+
+        </div>
+    </div>
+		</div>
+		<!--<div class="modal-footer">Modal footer</div>-->
+	</div>
+</div>
+</body>
+</html>
